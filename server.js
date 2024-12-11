@@ -1,7 +1,7 @@
 // server.js
 import { create, router as _router, defaults, rewriter } from 'json-server';
 const server = create();
-const router = _router('./db.json'); // путь к вашему файлу с данными
+const router = _router('./reviews.json');
 const middlewares = defaults({
     static: './dist'
 });
