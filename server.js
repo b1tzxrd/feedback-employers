@@ -1,6 +1,6 @@
 import { create, router as _router, defaults, rewriter } from 'json-server';
 const server = create();
-const router = _router('./db.json');
+const router = _router('./reviews.json');
 const middlewares = defaults({
     static: './build'
 });
