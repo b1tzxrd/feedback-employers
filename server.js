@@ -9,7 +9,7 @@ const middlewares = jsonServer.defaults({
 
 // Используем process.env для чтения PORT
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8000;
 
 server.use(middlewares);
 server.use(jsonServer.rewriter({
