@@ -28,7 +28,7 @@ const AddReview = () => {
         }
 
         try {
-            const res = await axios.post(BASE_URL, newReview)
+            const res = await axios.post(`${BASE_URL}/reviews`, newReview)
                 
             dispatch(createReview(res.data))
             console.log("successful feedback", res.data);

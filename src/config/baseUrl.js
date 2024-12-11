@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:8000/reviews"
+export const BASE_URL = "https://feedback-employers-5ed684f2178a.herokuapp.com/api"

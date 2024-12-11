@@ -11,7 +11,7 @@ const initialState = reviewAdapter.getInitialState({ reviewLoadingStatus: 'idle'
 export const fetchReviews = createAsyncThunk(
     'reviews/fetchReviews',
     async () => {
-        const res = await axios.get(BASE_URL)
+        const res = await axios.get(`${BASE_URL}/reviews`)
 
         return res.data
     }

@@ -10,7 +10,7 @@ export const useAdminActions = () => {
 
     const handleUpdateReview = useCallback(async (id, status) => {
         try {
-            await axios.patch(`${BASE_URL}/${id}`, {status})
+            await axios.patch(`${BASE_URL}/reviews/${id}`, {status})
         } catch (e) {
             console.error(e)
         }
@@ -20,7 +20,7 @@ export const useAdminActions = () => {
 
     const handleEditReview = useCallback(async (id, newText) => {
         try {
-            await axios.patch(`${BASE_URL}/${id}`, { review: newText })
+            await axios.patch(`${BASE_URL}/reviews/${id}`, { review: newText })
             dispatch(editReview({ id, newText }));
         } catch (e) {
             console.error(e)
